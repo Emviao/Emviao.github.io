@@ -8,59 +8,103 @@
     />
     <title>Document</title>
     <style>
-      body {
-        background-color: black;
+        body {
+            font-family: Arial, Helvetica, sans-serif;  
+            margin: 0;
+        }
+
+      .header {
+        background-color: rgb(6, 182, 152);
+        color: white;
+        text-align: center; 
+        padding: 80px; 
+        font-family: Arial, Helvetica, sans-serif;         
       }
-      .container {
-        background-color: orangered;
-        width: 107px;
+
+      /* revisar sticky*/
+      .navbar {
+        background-color:#333; 
+        position: sticky;
+        position: -webkit-sticky;
+        overflow: hidden;
+        top: 0;
       }
-      p {
-        color: azure;
+
+      .navbar a{
+        float: left;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
       }
-      .words {
-        color: aqua;
+
+      .navbar a.right {
+        float: right;
       }
-      .lastline {
-        color: blueviolet; border: 3px outset;width: 280px; height: 60px; padding: 10px;
+
+      .navbar a:hover{
+        background-color: #ddd;
+        color: black;
+      }
+
+      .side {
+        float: left; width: 40%; background-color: #f1f1f1;
+      }
+
+      .main {
+        float: left; width: 60%; background-color: white;
+      }
+
+      .footer {
+       text-align: center; background-color: gray; 
+      }
+
+      .home {
+        background-color: rgb(95, 94, 94); 
+        padding-top: 15px; 
+        padding-bottom: 16px;
+        color: aliceblue;
+      }
+      .fakeimg {
+       margin-left: 35px; background-color:#aaa; width: 90%;
       }
     </style>
   </head>
-
   <body>
-    <div class="container">
-      <h1>Alberto</h1>
-      <p></p>
+    <div class="header">
+      <h1>My Website</h1>
+      <p>A <b>responsive</b> website created by me.</p>
     </div>
-    <div>
-      <p class="words">
-        quería decirte que... <br /><br /><br /><br /><br />
-        te dedico mi segunda página con esto:
-      </p>
+    <div class="navbar">
+        <a href="#" class="active">Home</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#" class="right">Link</a>
     </div>
-
-    <br />
-    <a
-      href="https://www.museocostarica.go.cr/wp-content/uploads/articulos_educativos/Arqueologia/ceramica_elaboracion/13-aplicaciones.jpg"
-      ><img
-        style="margin-left: 20px"
-        src="alberto.png"
-        alt="sorry  ahí"
-    /></a>
-    <br />
-    <p>Mira tu gemelo dando click</p>
-    <span style="font-size: 40px">&#9757;</span> <br /><br /><br /><br /><br />
-
-    <hr />
-    <div>
-      <p class="lastline">
-        Chuuuuupa chuuuuupa hijo de la gran puta <br/> <br>Salu2
-      </p>
+    <div class="side">
+        <h2>About Me</h2>
+        <h5>Photo of me:</h5>
+        <div class="fakeimg" style="height: 200px;">Image</div>
+        <p>Some text about me in culpa qui officia deserunt mollit anim.. </p>
+        <h3>More Text</h3>
+        <p>Lorem ipsum dolor sit ame.</p>
+        <div class="fakeimg" style="height: 133px;">Image</div>
+        <div class="fakeimg" style="height: 134px;">Image</div>
+        <div class="fakeimg" style="height: 134px;">Image</div>
     </div>
-    <img
-      src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d9/Chupa-chups.svg/1200px-Chupa-chups.svg.png"
-      alt="Chupa chups"
-      width="50"
-    />
+    <div class="main">
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, Dec 7, 2017</h5>
+        <div class="fakeimg" style="height: 200px;">Image</div>
+        <p><p>Some text..</p> Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <br>
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, Dec 7, 2017</h5>
+        <div class="fakeimg" style="height: 200px;">Image</div>
+        <p><p>Some text..</p> Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+    <div class="footer">
+            <h2>Footer</h2>
+        </div>    
   </body>
 </html>
